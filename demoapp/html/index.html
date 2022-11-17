@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Login Page</title>
+	<link rel="stylesheet" href="style.css" media="screen" type="text/css" />
+    <script type="text/javascript">
+        function login(username, password) {
+            if (username === "demo" && password === "good_pass") {
+                window.location = "welcome.html";
+            } else {
+                window.location = "error.html";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="login">
+        <form name="login_form" onsubmit="login(this.username_field.value, this.password_field.value); return false;">
+            <fieldset class="clearfix">
+                <p><span class="fontawesome-user"></span><input name="username_field" type="text" placeholder="Логин"></p>
+                <p><span class="fontawesome-lock"></span><input name="password_field" type="password" placeholder="Пароль"></p>
+                <p><input name="submit" type="submit" value="ВОЙТИ"></p>
+            </fieldset>
+        </form>
+        <p>Нет аккаунта? &nbsp;&nbsp;<a id="link_reg" href="#">Регистрация</a><span class="fontawesome-arrow-right"></span></p>
+    </div>
+</body>
+</html>
