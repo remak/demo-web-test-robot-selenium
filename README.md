@@ -13,7 +13,7 @@ python, robotframework, robotframework-seleniumlibrary
 `python -m venv venv`
 
 - активировать виртуальное окружение:
-`source /venv/bin/activate` в linux
+`source venv/bin/activate` в linux
 `venv\Scripts\activate.bat` в windows
 
 - установить необходимые пакеты:
